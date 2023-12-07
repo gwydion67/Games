@@ -1,0 +1,253 @@
+[
+    {
+        "label": "turtle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle",
+        "description": "turtle",
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox\\",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "paddle_a_up",
+        "kind": 2,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "def paddle_a_up():\n    y = paddle_a.ycor()\n    y += 20\n    if y < 280:\n        paddle_a.sety(y)\ndef paddle_a_down():\n    y = paddle_a.ycor()\n    y -= 20\n    if y > -280:\n        paddle_a.sety(y)",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "paddle_a_down",
+        "kind": 2,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "def paddle_a_down():\n    y = paddle_a.ycor()\n    y -= 20\n    if y > -280:\n        paddle_a.sety(y)\ndef paddle_b_up():\n    y = paddle_b.ycor()\n    y += 20\n    if y < 280:\n        paddle_b.sety(y)",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "paddle_b_up",
+        "kind": 2,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "def paddle_b_up():\n    y = paddle_b.ycor()\n    y += 20\n    if y < 280:\n        paddle_b.sety(y)\ndef paddle_b_down():\n    y = paddle_b.ycor()\n    y -= 20\n    if y > -280:\n        paddle_b.sety(y)",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "paddle_b_down",
+        "kind": 2,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "def paddle_b_down():\n    y = paddle_b.ycor()\n    y -= 20\n    if y > -280:\n        paddle_b.sety(y)\n## Keyboard Bindings (\nwn.listen()\nwn.onkeypress(paddle_a_up, \"w\")\nwn.onkeypress(paddle_a_down, \"s\")\nwn.onkeypress(paddle_b_up, \"Up\")",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "wn",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "wn = turtle.Screen()\nwn.title(\"Pong\")\nwn.bgcolor(\"black\")\nwn.setup(width=800, height=600)\nwn.tracer(0) # stops the window from updating ... helps running game faster\n# Score\nscoreA = 0\nscoreB = 0\n# paddle A\npaddle_a = turtle.Turtle()",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "scoreA",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "scoreA = 0\nscoreB = 0\n# paddle A\npaddle_a = turtle.Turtle()\npaddle_a.speed(0)\npaddle_a.shape(\"square\")\npaddle_a.color(\"white\")\npaddle_a.shapesize(stretch_wid=5,stretch_len=1)\npaddle_a.penup()\npaddle_a.goto(-350,0)",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "scoreB",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "scoreB = 0\n# paddle A\npaddle_a = turtle.Turtle()\npaddle_a.speed(0)\npaddle_a.shape(\"square\")\npaddle_a.color(\"white\")\npaddle_a.shapesize(stretch_wid=5,stretch_len=1)\npaddle_a.penup()\npaddle_a.goto(-350,0)\n# paddle B",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "paddle_a",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "paddle_a = turtle.Turtle()\npaddle_a.speed(0)\npaddle_a.shape(\"square\")\npaddle_a.color(\"white\")\npaddle_a.shapesize(stretch_wid=5,stretch_len=1)\npaddle_a.penup()\npaddle_a.goto(-350,0)\n# paddle B\npaddle_b = turtle.Turtle()\npaddle_b.speed(0)",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "paddle_b",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "paddle_b = turtle.Turtle()\npaddle_b.speed(0)\npaddle_b.shape(\"square\")\npaddle_b.color(\"white\")\npaddle_b.shapesize(stretch_wid=5,stretch_len=1)\npaddle_b.penup()\npaddle_b.goto(350,0)\n# Ball\nball = turtle.Turtle()\nball.speed(0)",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "ball",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "ball = turtle.Turtle()\nball.speed(0)\nball.shape(\"square\")\nball.color(\"white\")\nball.penup()\nball.goto(0,0)\nball.dx = 1\nball.dy = 1\n# Pen\npen = turtle.Turtle()",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "ball.dx",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "ball.dx = 1\nball.dy = 1\n# Pen\npen = turtle.Turtle()\npen.speed(0)\npen.color(\"white\")\npen.penup()\npen.hideturtle()\npen.goto(0,260)\npen.write(f\"Player A: {scoreA} Player B: {scoreB}\", align=\"center\", font=(\"Courier\", 24, \"normal\"))",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "ball.dy",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "ball.dy = 1\n# Pen\npen = turtle.Turtle()\npen.speed(0)\npen.color(\"white\")\npen.penup()\npen.hideturtle()\npen.goto(0,260)\npen.write(f\"Player A: {scoreA} Player B: {scoreB}\", align=\"center\", font=(\"Courier\", 24, \"normal\"))\n## Functions ",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "pen",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "pen = turtle.Turtle()\npen.speed(0)\npen.color(\"white\")\npen.penup()\npen.hideturtle()\npen.goto(0,260)\npen.write(f\"Player A: {scoreA} Player B: {scoreB}\", align=\"center\", font=(\"Courier\", 24, \"normal\"))\n## Functions \ndef paddle_a_up():\n    y = paddle_a.ycor()",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "counter = turtle.Turtle()\ncounter.speed()\ncounter.color(\"white\")\ncounter.penup()\ncounter.hideturtle()\ncounter.goto(0,0)\ncounter.write(\"3\",align=\"center\", font=(\"Courier\", 48, \"normal\") )\nwn.update()\ntime.sleep(1)\ncounter.clear()",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "cube",
+        "kind": 6,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "class cube(object):\n    rows = 0 \n    w =0 \n    def __init__(self,start,dirnx=1, dirny=0,color=(255,0,0)):\n        pass\n    def move(self,dirnx,dirny):\n        pass\n    def draw(self, surface, eyes=False):\n        pass\nclass snake(object):",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "snake",
+        "kind": 6,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "class snake(object):\n    def __init__(self, color, pos) -> None:\n        pass\n    def move(self):\n        pass\n    def reset(self):\n        pass\n    def addCube(self):\n        pass\n    def draw(self):",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "drawGrid",
+        "kind": 2,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "def drawGrid(w,rows,surfaces):\n    pass\ndef redrawWindow(surface):\n    pass\ndef randomSnack(rows, items):\n    pass\ndef message_box(subject, content):\n    pass\ndef main():\n    width = 500",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "redrawWindow",
+        "kind": 2,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "def redrawWindow(surface):\n    pass\ndef randomSnack(rows, items):\n    pass\ndef message_box(subject, content):\n    pass\ndef main():\n    width = 500\n    height = 500\n    win = pygame.display.set_mode((width, height))",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "randomSnack",
+        "kind": 2,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "def randomSnack(rows, items):\n    pass\ndef message_box(subject, content):\n    pass\ndef main():\n    width = 500\n    height = 500\n    win = pygame.display.set_mode((width, height))\n    s = snake((255,0,0),(10,10))\n    flag = True",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "message_box",
+        "kind": 2,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "def message_box(subject, content):\n    pass\ndef main():\n    width = 500\n    height = 500\n    win = pygame.display.set_mode((width, height))\n    s = snake((255,0,0),(10,10))\n    flag = True\n    while flag:\n        pygame.time.delay(50)",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "def main():\n    width = 500\n    height = 500\n    win = pygame.display.set_mode((width, height))\n    s = snake((255,0,0),(10,10))\n    flag = True\n    while flag:\n        pygame.time.delay(50)\n        clock.tick(10)\nif __name__ == \"__main__\":",
+        "detail": "snake",
+        "documentation": {}
+    }
+]
