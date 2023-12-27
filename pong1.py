@@ -92,64 +92,62 @@ wn.onkeypress(paddle_b_down, "Down")
 
 
 ##* Main game loop
+def pong():
+    global scoreA, scoreB
+    counter = turtle.Turtle()
+    counter.speed()
+    counter.color("white")
+    counter.penup()
+    counter.hideturtle()
+    counter.goto(0,0)
+    for i in range(3):
+        counter.write(3 - i,align="center", font=("Courier", 48, "normal") )
+        wn.update()
+        time.sleep(1)
+        counter.clear()
 
-counter = turtle.Turtle()
-counter.speed()
-counter.color("white")
-counter.penup()
-counter.hideturtle()
-counter.goto(0,0)
-counter.write("3",align="center", font=("Courier", 48, "normal") )
-wn.update()
-time.sleep(1)
-counter.clear()
-counter.write("2",align="center", font=("Courier", 48, "normal") )
-wn.update()
-time.sleep(1)
-counter.clear()
-counter.write("1",align="center", font=("Courier", 48, "normal") )
-wn.update()
-time.sleep(0.5)
-counter.clear()
-
-while True:
-    wn.update();
-    pen.clear()
-    pen.write(f"Player A: {scoreA} Player B: {scoreB}", align="center", font=("Courier", 24, "normal"))
-
-    
-    ## move the ball
-    ball.setx(ball.xcor() + ball.dx)
-    ball.sety(ball.ycor() + ball.dy)
-    
-    ## bounce the ball
-    if ball.ycor() > 290:
-        ball.sety(290)
-        ball.dy *= -1
-    
-    if ball.ycor() < -290:
-        ball.sety(-290)
-        ball.dy *= -1
-        
-    if ball.xcor() > 390:
-        ball.goto(0,0)
-        time.sleep(0.8)
-        ball.dx *= -1
-        scoreA += 1
+    while True:
+        wn.update();
+        pen.clear()
+        pen.write(f"Player A: {scoreA} Player B: {scoreB}", align="center", font=("Courier", 24, "normal"))
 
         
-    if ball.xcor() < -390:
-        ball.goto(0,0)
-        time.sleep(0.8)
-        ball.dx *= -1
-        scoreB += 1
+        ## move the ball
+        ball.setx(ball.xcor() + ball.dx)
+        ball.sety(ball.ycor() + ball.dy)
         
-    ## Collision 
-    if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 50) and (ball.ycor() > paddle_b.ycor() - 50):
-        ball.setx(340)
-        ball.dx *= -1
+        ## bounce the ball
+        if ball.ycor() > 290:
+            ball.sety(290)
+            ball.dy *= -1
         
-    if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 50) and (ball.ycor() > paddle_a.ycor() - 50):
-        ball.setx(-340)
-        ball.dx *= -1
-     
+        if ball.ycor() < -290:
+            ball.sety(-290)
+            ball.dy *= -1
+            
+        if ball.xcor() > 390:
+            ball.goto(0,0)
+            time.sleep(0.8)
+            ball.dx *= -1
+            scoreA += 1
+
+            
+        if ball.xcor() < -390:
+            ball.goto(0,0)
+            time.sleep(0.8)
+            ball.dx *= -1
+            scoreB += 1
+            
+        ## Collision 
+        if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 50) and (ball.ycor() > paddle_b.ycor() - 50):
+            ball.setx(340)
+            ball.dx *= -1
+            
+        if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 50) and (ball.ycor() > paddle_a.ycor() - 50):
+            ball.setx(-340)
+            ball.dx *= -1
+        
+        
+        
+if __name__ == "__main__":
+    pong()

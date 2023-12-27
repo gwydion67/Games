@@ -170,7 +170,7 @@ def message_box(subject, content):
         pass
  
  
-def main():
+def snakeGame():
     global width, rows, s, snack
     width = 500
     rows = 20
@@ -197,9 +197,5 @@ def main():
  
            
         redrawWindow(win)
-    redrawWindow(win)
- 
-       
-    pass
- 
-if __name__ == "__main__": main()
+    redrawWindow(win) 
+if __name__ == "__main__": snakeGame()

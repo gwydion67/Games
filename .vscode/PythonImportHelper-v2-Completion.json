@@ -143,6 +143,15 @@
         "documentation": {}
     },
     {
+        "label": "connect4",
+        "kind": 2,
+        "importPath": "connect4",
+        "description": "connect4",
+        "peekOfCode": "def connect4():\n    board = create_board()\n    print_board(board)    \n    draw_board(board)\n    game_over = False\n    myfont = pygame.font.SysFont(\"monospace\", 75)\n    turn = 0 \n    while not game_over:\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:",
+        "detail": "connect4",
+        "documentation": {}
+    },
+    {
         "label": "ROW_COUNT",
         "kind": 5,
         "importPath": "connect4",
@@ -183,7 +192,7 @@
         "kind": 5,
         "importPath": "connect4",
         "description": "connect4",
-        "peekOfCode": "RED = (255,0,0)\nYELLOW = (255,255,0)\nSQUARE_SIZE = 100\nRADIUS = int(SQUARE_SIZE/2 - 5)\nwidth = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\nmyfont = pygame.font.SysFont(\"monospace\", 75)",
+        "peekOfCode": "RED = (255,0,0)\nYELLOW = (255,255,0)\nSQUARE_SIZE = 100\nRADIUS = int(SQUARE_SIZE/2 - 5)\nwidth = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\ndef create_board():",
         "detail": "connect4",
         "documentation": {}
     },
@@ -192,7 +201,7 @@
         "kind": 5,
         "importPath": "connect4",
         "description": "connect4",
-        "peekOfCode": "YELLOW = (255,255,0)\nSQUARE_SIZE = 100\nRADIUS = int(SQUARE_SIZE/2 - 5)\nwidth = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\nmyfont = pygame.font.SysFont(\"monospace\", 75)\ngame_over = False",
+        "peekOfCode": "YELLOW = (255,255,0)\nSQUARE_SIZE = 100\nRADIUS = int(SQUARE_SIZE/2 - 5)\nwidth = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))",
         "detail": "connect4",
         "documentation": {}
     },
@@ -201,7 +210,7 @@
         "kind": 5,
         "importPath": "connect4",
         "description": "connect4",
-        "peekOfCode": "SQUARE_SIZE = 100\nRADIUS = int(SQUARE_SIZE/2 - 5)\nwidth = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\nmyfont = pygame.font.SysFont(\"monospace\", 75)\ngame_over = False\nturn = 0 ",
+        "peekOfCode": "SQUARE_SIZE = 100\nRADIUS = int(SQUARE_SIZE/2 - 5)\nwidth = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board",
         "detail": "connect4",
         "documentation": {}
     },
@@ -210,7 +219,7 @@
         "kind": 5,
         "importPath": "connect4",
         "description": "connect4",
-        "peekOfCode": "RADIUS = int(SQUARE_SIZE/2 - 5)\nwidth = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\nmyfont = pygame.font.SysFont(\"monospace\", 75)\ngame_over = False\nturn = 0 \ndef create_board():",
+        "peekOfCode": "RADIUS = int(SQUARE_SIZE/2 - 5)\nwidth = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):",
         "detail": "connect4",
         "documentation": {}
     },
@@ -219,7 +228,7 @@
         "kind": 5,
         "importPath": "connect4",
         "description": "connect4",
-        "peekOfCode": "width = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\nmyfont = pygame.font.SysFont(\"monospace\", 75)\ngame_over = False\nturn = 0 \ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))",
+        "peekOfCode": "width = COLUMN_COUNT * SQUARE_SIZE\nheight = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):\n    board[row][col] = piece",
         "detail": "connect4",
         "documentation": {}
     },
@@ -228,7 +237,7 @@
         "kind": 5,
         "importPath": "connect4",
         "description": "connect4",
-        "peekOfCode": "height = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\nmyfont = pygame.font.SysFont(\"monospace\", 75)\ngame_over = False\nturn = 0 \ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board",
+        "peekOfCode": "height = (ROW_COUNT + 1) * SQUARE_SIZE\nsize = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):\n    board[row][col] = piece\ndef is_valid_location(board,col):",
         "detail": "connect4",
         "documentation": {}
     },
@@ -237,7 +246,7 @@
         "kind": 5,
         "importPath": "connect4",
         "description": "connect4",
-        "peekOfCode": "size = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\nmyfont = pygame.font.SysFont(\"monospace\", 75)\ngame_over = False\nturn = 0 \ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):",
+        "peekOfCode": "size = (width, height)\npygame.init()\nscreen = pygame.display.set_mode(size)\ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):\n    board[row][col] = piece\ndef is_valid_location(board,col):\n    return board[ROW_COUNT - 1][col] == 0",
         "detail": "connect4",
         "documentation": {}
     },
@@ -246,43 +255,7 @@
         "kind": 5,
         "importPath": "connect4",
         "description": "connect4",
-        "peekOfCode": "screen = pygame.display.set_mode(size)\nmyfont = pygame.font.SysFont(\"monospace\", 75)\ngame_over = False\nturn = 0 \ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):\n    board[row][col] = piece\ndef is_valid_location(board,col):",
-        "detail": "connect4",
-        "documentation": {}
-    },
-    {
-        "label": "myfont",
-        "kind": 5,
-        "importPath": "connect4",
-        "description": "connect4",
-        "peekOfCode": "myfont = pygame.font.SysFont(\"monospace\", 75)\ngame_over = False\nturn = 0 \ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):\n    board[row][col] = piece\ndef is_valid_location(board,col):\n    return board[ROW_COUNT - 1][col] == 0",
-        "detail": "connect4",
-        "documentation": {}
-    },
-    {
-        "label": "game_over",
-        "kind": 5,
-        "importPath": "connect4",
-        "description": "connect4",
-        "peekOfCode": "game_over = False\nturn = 0 \ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):\n    board[row][col] = piece\ndef is_valid_location(board,col):\n    return board[ROW_COUNT - 1][col] == 0\ndef get_next_open_row(board,col):",
-        "detail": "connect4",
-        "documentation": {}
-    },
-    {
-        "label": "turn",
-        "kind": 5,
-        "importPath": "connect4",
-        "description": "connect4",
-        "peekOfCode": "turn = 0 \ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):\n    board[row][col] = piece\ndef is_valid_location(board,col):\n    return board[ROW_COUNT - 1][col] == 0\ndef get_next_open_row(board,col):\n    for r in range(ROW_COUNT):",
-        "detail": "connect4",
-        "documentation": {}
-    },
-    {
-        "label": "board",
-        "kind": 5,
-        "importPath": "connect4",
-        "description": "connect4",
-        "peekOfCode": "board = create_board()\nprint_board(board)    \ndraw_board(board)\nwhile not game_over:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            sys.exit()\n        if event.type == pygame.MOUSEMOTION:\n            posx = event.pos[0]\n            pygame.draw.rect(screen, BLACK,(0,0,width, SQUARE_SIZE)) ",
+        "peekOfCode": "screen = pygame.display.set_mode(size)\ndef create_board():\n    board = np.zeros((ROW_COUNT,COLUMN_COUNT))\n    return board\ndef drop_piece(board, row, col, piece):\n    board[row][col] = piece\ndef is_valid_location(board,col):\n    return board[ROW_COUNT - 1][col] == 0\ndef get_next_open_row(board,col):\n    for r in range(ROW_COUNT):",
         "detail": "connect4",
         "documentation": {}
     },
@@ -319,6 +292,15 @@
         "importPath": "pong1",
         "description": "pong1",
         "peekOfCode": "def paddle_b_down():\n    y = paddle_b.ycor()\n    y -= 20\n    if y > -280:\n        paddle_b.sety(y)\n## Keyboard Bindings (\nwn.listen()\nwn.onkeypress(paddle_a_up, \"w\")\nwn.onkeypress(paddle_a_down, \"s\")\nwn.onkeypress(paddle_b_up, \"Up\")",
+        "detail": "pong1",
+        "documentation": {}
+    },
+    {
+        "label": "pong",
+        "kind": 2,
+        "importPath": "pong1",
+        "description": "pong1",
+        "peekOfCode": "def pong():\n    global scoreA, scoreB\n    counter = turtle.Turtle()\n    counter.speed()\n    counter.color(\"white\")\n    counter.penup()\n    counter.hideturtle()\n    counter.goto(0,0)\n    for i in range(3):\n        counter.write(3 - i,align=\"center\", font=(\"Courier\", 48, \"normal\") )",
         "detail": "pong1",
         "documentation": {}
     },
@@ -404,15 +386,6 @@
         "documentation": {}
     },
     {
-        "label": "counter",
-        "kind": 5,
-        "importPath": "pong1",
-        "description": "pong1",
-        "peekOfCode": "counter = turtle.Turtle()\ncounter.speed()\ncounter.color(\"white\")\ncounter.penup()\ncounter.hideturtle()\ncounter.goto(0,0)\ncounter.write(\"3\",align=\"center\", font=(\"Courier\", 48, \"normal\") )\nwn.update()\ntime.sleep(1)\ncounter.clear()",
-        "detail": "pong1",
-        "documentation": {}
-    },
-    {
         "label": "cube",
         "kind": 6,
         "importPath": "snake",
@@ -462,16 +435,16 @@
         "kind": 2,
         "importPath": "snake",
         "description": "snake",
-        "peekOfCode": "def message_box(subject, content):\n    root = tk.Tk()\n    root.attributes(\"-topmost\", True)\n    root.withdraw()\n    messagebox.showinfo(subject, content)\n    try:\n        root.destroy()\n    except:\n        pass\ndef main():",
+        "peekOfCode": "def message_box(subject, content):\n    root = tk.Tk()\n    root.attributes(\"-topmost\", True)\n    root.withdraw()\n    messagebox.showinfo(subject, content)\n    try:\n        root.destroy()\n    except:\n        pass\ndef snakeGame():",
         "detail": "snake",
         "documentation": {}
     },
     {
-        "label": "main",
+        "label": "snakeGame",
         "kind": 2,
         "importPath": "snake",
         "description": "snake",
-        "peekOfCode": "def main():\n    global width, rows, s, snack\n    width = 500\n    rows = 20\n    win = pygame.display.set_mode((width, width))\n    s = snake((255,0,0), (10,10))\n    snack = cube(randomSnack(rows, s), color=(0,255,0))\n    flag = True\n    clock = pygame.time.Clock()\n    while flag:",
+        "peekOfCode": "def snakeGame():\n    global width, rows, s, snack\n    width = 500\n    rows = 20\n    win = pygame.display.set_mode((width, width))\n    s = snake((255,0,0), (10,10))\n    snack = cube(randomSnack(rows, s), color=(0,255,0))\n    flag = True\n    clock = pygame.time.Clock()\n    while flag:",
         "detail": "snake",
         "documentation": {}
     }
